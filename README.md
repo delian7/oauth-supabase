@@ -56,14 +56,14 @@ bundle exec rspec
 3. **Update the Lambda function code:**
 
    ```sh
-   aws lambda update-function-code --function-name your_lambda_function_name \
+   aws lambda update-function-code --function-name oauth \
    --zip-file fileb://lambda_function.zip
    ```
 
 *Alternatively, you can combine packaging and updating:*
 
 ```sh
-zip -r lambda_function.zip . && aws lambda update-function-code --function-name your_lambda_function_name \
+zip -r lambda_function.zip . && aws lambda update-function-code --function-name oauth \
 --zip-file fileb://lambda_function.zip
 ```
 
